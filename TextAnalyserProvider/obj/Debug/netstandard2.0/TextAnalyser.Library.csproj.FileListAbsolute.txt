@@ -1,0 +1,9 @@
+c:\users\tfilypovych\source\repos\TextAnalyser\TextAnalyserProvider\bin\Debug\netstandard2.0\TextAnalyser.Library.deps.json
+c:\users\tfilypovych\source\repos\TextAnalyser\TextAnalyserProvider\bin\Debug\netstandard2.0\TextAnalyser.Library.dll
+c:\users\tfilypovych\source\repos\TextAnalyser\TextAnalyserProvider\bin\Debug\netstandard2.0\TextAnalyser.Library.pdb
+c:\users\tfilypovych\source\repos\TextAnalyser\TextAnalyserProvider\obj\Debug\netstandard2.0\TextAnalyser.Library.csprojAssemblyReference.cache
+c:\users\tfilypovych\source\repos\TextAnalyser\TextAnalyserProvider\obj\Debug\netstandard2.0\TextAnalyser.Library.csproj.CoreCompileInputs.cache
+c:\users\tfilypovych\source\repos\TextAnalyser\TextAnalyserProvider\obj\Debug\netstandard2.0\TextAnalyser.Library.AssemblyInfoInputs.cache
+c:\users\tfilypovych\source\repos\TextAnalyser\TextAnalyserProvider\obj\Debug\netstandard2.0\TextAnalyser.Library.AssemblyInfo.cs
+c:\users\tfilypovych\source\repos\TextAnalyser\TextAnalyserProvider\obj\Debug\netstandard2.0\TextAnalyser.Library.dll
+c:\users\tfilypovych\source\repos\TextAnalyser\TextAnalyserProvider\obj\Debug\netstandard2.0\TextAnalyser.Library.pdb
