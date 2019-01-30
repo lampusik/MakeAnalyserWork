@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <DebugType>embedded</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NodaTime" Version="2.4.0" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <NestedBuild>$(TargetDir)\nestedBuild\</NestedBuild>
+    <AssemblyName>FunnyAnalyser.App</AssemblyName>
+    <RootNamespace>FunnyAnalyser.App</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <BootStrapFiles Include="&#xD;&#xA;                    $(NestedBuild)hostpolicy.dll;&#xD;&#xA;                    $(NestedBuild)$(ProjectName).exe;&#xD;&#xA;                    $(NestedBuild)hostfxr.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FunnyAnalyser.Library\FunnyAnalyser.Library.csproj" />
+  </ItemGroup>
+  <Target Name="GenerateNetcoreExe" AfterTargets="Build" Condition="$(IsNestedBuild) != true">
+    <RemoveDir Directories="$(NestedBuild)" />
+    <Exec ConsoleToMSBuild="true" Command="dotnet build $(ProjectPath) ^&#xD;&#xA;          --configuration $(Configuration) ^&#xD;&#xA;          --runtime win-x64 ^&#xD;&#xA;          --output $(NestedBuild) ^&#xD;&#xA;          /p:CopyLocalLockFileAssemblies=false;IsNestedBuild=true">
+      <Output TaskParameter="ConsoleOutput" PropertyName="OutputOfExec" />
+    </Exec>
+    <Copy SourceFiles="@(BootStrapFiles)" DestinationFolder="$(OutputPath)" />
+    <RemoveDir Directories="$(NestedBuild)" />
+  </Target>
+
+</Project>
