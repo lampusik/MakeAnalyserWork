@@ -26,6 +26,32 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       }
+    },
+    ".NETStandard,Version=v2.0/win-x64": {
+      "Microsoft.NETCore.Platforms/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "NETStandard.Library/2.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        },
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "build": {
+          "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      }
     }
   },
   "libraries": {
@@ -183,11 +209,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\users\\tfilypovych\\source\\repos\\TextAnalyser\\TextAnalyserProvider\\TextAnalyser.Library.csproj",
+      "projectUniqueName": "C:\\Users\\tfilypovych\\source\\repos\\TextAnalyser\\TextAnalyserProvider\\TextAnalyser.Library.csproj",
       "projectName": "TextAnalyser.Library",
-      "projectPath": "c:\\users\\tfilypovych\\source\\repos\\TextAnalyser\\TextAnalyserProvider\\TextAnalyser.Library.csproj",
+      "projectPath": "C:\\Users\\tfilypovych\\source\\repos\\TextAnalyser\\TextAnalyserProvider\\TextAnalyser.Library.csproj",
       "packagesPath": "C:\\Users\\tfilypovych\\.nuget\\packages\\",
-      "outputPath": "c:\\users\\tfilypovych\\source\\repos\\TextAnalyser\\TextAnalyserProvider\\obj\\",
+      "outputPath": "C:\\Users\\tfilypovych\\source\\repos\\TextAnalyser\\TextAnalyserProvider\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -229,6 +255,11 @@
         ],
         "assetTargetFallback": true,
         "warn": true
+      }
+    },
+    "runtimes": {
+      "win-x64": {
+        "#import": []
       }
     }
   }

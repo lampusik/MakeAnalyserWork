@@ -4,31 +4,25 @@ namespace TextAnalyser.Library.Interfaces
 {
     public static class ListSortHelper
     {
-        public static Word[] SortWordLength(this Word[] words)
+        public static string[] SortByLength(this string[] words)
         {
-            int length = words.Length;
-
-            Word temp = words[0];
-
-            for (int i = 0; i < length; i++)
+            for (int i = 1; i < words.Length; i++)
             {
-                for (int j = i + 1; j < length; j++)
+                string temp = words[i];
+
+                int j = i - 1;
+                while (j >= 0 && temp.Length < words[j].Length)
                 {
-                    if (words[i].Item.Length > words[j].Item.Length)
-                    {
-                        temp = words[i];
-
-                        words[i] = words[j];
-
-                        words[j] = temp;
-                    }
+                    words[j + 1] = words[j];
+                    j--;
                 }
+                words[j + 1] = temp;
             }
 
             return words;
         }
 
-        public static string[] SortAIIS(this string[] words)
+        public static string[] SortByASCII(this string[] words)
         {
             int min = 0;
 
@@ -38,7 +32,7 @@ namespace TextAnalyser.Library.Interfaces
             {
                 for (int j = i + 1; j < words.Length; j++)
                 {
-                    if (words[i].Length < words[j].Length)
+                    if (words[i].Length > words[j].Length)
                         min = words[i].Length;
                     else
                         min = words[j].Length;

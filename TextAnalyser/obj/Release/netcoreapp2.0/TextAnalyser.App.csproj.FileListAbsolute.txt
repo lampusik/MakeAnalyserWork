@@ -1,0 +1,14 @@
+C:\Users\tfilypovych\source\repos\TextAnalyser\TextAnalyser\bin\Release\netcoreapp2.0\TextAnalyser.App.deps.json
+C:\Users\tfilypovych\source\repos\TextAnalyser\TextAnalyser\bin\Release\netcoreapp2.0\TextAnalyser.App.runtimeconfig.json
+C:\Users\tfilypovych\source\repos\TextAnalyser\TextAnalyser\bin\Release\netcoreapp2.0\TextAnalyser.App.runtimeconfig.dev.json
+C:\Users\tfilypovych\source\repos\TextAnalyser\TextAnalyser\bin\Release\netcoreapp2.0\TextAnalyser.App.dll
+C:\Users\tfilypovych\source\repos\TextAnalyser\TextAnalyser\bin\Release\netcoreapp2.0\TextAnalyser.App.pdb
+C:\Users\tfilypovych\source\repos\TextAnalyser\TextAnalyser\bin\Release\netcoreapp2.0\TextAnalyser.Library.dll
+C:\Users\tfilypovych\source\repos\TextAnalyser\TextAnalyser\bin\Release\netcoreapp2.0\TextAnalyser.Library.pdb
+C:\Users\tfilypovych\source\repos\TextAnalyser\TextAnalyser\obj\Release\netcoreapp2.0\TextAnalyser.App.csprojAssemblyReference.cache
+C:\Users\tfilypovych\source\repos\TextAnalyser\TextAnalyser\obj\Release\netcoreapp2.0\TextAnalyser.App.csproj.CoreCompileInputs.cache
+C:\Users\tfilypovych\source\repos\TextAnalyser\TextAnalyser\obj\Release\netcoreapp2.0\TextAnalyser.App.AssemblyInfoInputs.cache
+C:\Users\tfilypovych\source\repos\TextAnalyser\TextAnalyser\obj\Release\netcoreapp2.0\TextAnalyser.App.AssemblyInfo.cs
+C:\Users\tfilypovych\source\repos\TextAnalyser\TextAnalyser\obj\Release\netcoreapp2.0\TextAnalyser.App.csproj.CopyComplete
+C:\Users\tfilypovych\source\repos\TextAnalyser\TextAnalyser\obj\Release\netcoreapp2.0\TextAnalyser.App.dll
+C:\Users\tfilypovych\source\repos\TextAnalyser\TextAnalyser\obj\Release\netcoreapp2.0\TextAnalyser.App.pdb

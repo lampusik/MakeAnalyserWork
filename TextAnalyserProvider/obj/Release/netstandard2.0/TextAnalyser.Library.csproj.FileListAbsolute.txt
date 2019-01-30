@@ -1,0 +1,12 @@
+C:\Users\tfilypovych\source\repos\TextAnalyser\TextAnalyserProvider\bin\Release\netstandard2.0\TextAnalyser.Library.deps.json
+C:\Users\tfilypovych\source\repos\TextAnalyser\TextAnalyserProvider\bin\Release\netstandard2.0\TextAnalyser.Library.dll
+C:\Users\tfilypovych\source\repos\TextAnalyser\TextAnalyserProvider\bin\Release\netstandard2.0\TextAnalyser.Library.pdb
+C:\Users\tfilypovych\source\repos\TextAnalyser\TextAnalyserProvider\obj\Release\netstandard2.0\TextAnalyser.Library.csproj.CoreCompileInputs.cache
+C:\Users\tfilypovych\source\repos\TextAnalyser\TextAnalyserProvider\obj\Release\netstandard2.0\TextAnalyser.Library.AssemblyInfoInputs.cache
+C:\Users\tfilypovych\source\repos\TextAnalyser\TextAnalyserProvider\obj\Release\netstandard2.0\TextAnalyser.Library.AssemblyInfo.cs
+C:\Users\tfilypovych\source\repos\TextAnalyser\TextAnalyserProvider\obj\Release\netstandard2.0\TextAnalyser.Library.dll
+C:\Users\tfilypovych\source\repos\TextAnalyser\TextAnalyserProvider\obj\Release\netstandard2.0\TextAnalyser.Library.pdb
+C:\nestedBuild\TextAnalyser.Library.deps.json
+C:\nestedBuild\TextAnalyser.Library.dll
+C:\nestedBuild\TextAnalyser.Library.pdb
+C:\Users\tfilypovych\source\repos\TextAnalyser\TextAnalyserProvider\obj\Release\netstandard2.0\TextAnalyser.Library.csprojAssemblyReference.cache

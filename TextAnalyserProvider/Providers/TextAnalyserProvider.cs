@@ -11,29 +11,27 @@ namespace TextAnalyser.Library.Providers
         public Word[] Process(string phrase)
         {
             var wordsCountResult = SplitPhrase(phrase);
-                      
-            return wordsCountResult.SortWordLength(); 
+            return wordsCountResult; 
         }
 
         private Word[] SplitPhrase(string phrase)
         {
             var wordsList = phrase.Split(_separators);
-            wordsList = wordsList.SortAIIS();
             var unickWordsCount = CountUnickWords(wordsList);
+
+            wordsList = wordsList.SortByASCII();
+            wordsList = wordsList.SortByLength();
 
             var wordsCountResult = new Word[unickWordsCount];
 
             int countResult = 0;
-            string oldWord = wordsList[0];
-            wordsCountResult[countResult] = CountWords(wordsList, wordsList[0]);
-
-            for (int i = 1; i < wordsList.Length; i++)
+            
+            for (int i = 0; i < wordsList.Length; i++)
             {
-                if (oldWord != wordsList[i])
+                if (!IsWordAdded(wordsCountResult, wordsList[i]))
                 {
-                    oldWord = wordsList[i];
-                    countResult++;
                     wordsCountResult[countResult] = CountWords(wordsList, wordsList[i]);
+                    countResult++;
                 }
             }
 
@@ -61,7 +59,7 @@ namespace TextAnalyser.Library.Providers
 
         private int CountUnickWords(string[] wordsList)
         {
-            int count = 1;
+            int count = 0;
             string oldWord = wordsList[0];
 
             for (int i = 1; i < wordsList.Length; i++)
@@ -73,6 +71,24 @@ namespace TextAnalyser.Library.Providers
                 }
             }
             return count;
+        }
+
+        private bool IsWordAdded(Word[] wordsResult, string item)
+        {
+            for (int i = 0; i < wordsResult.Length; i++)
+            {
+                if(wordsResult[i] == null)
+                {
+                    return false;
+                }
+
+                if (wordsResult[i].Item.Equals(item))
+                {
+                    return true;
+                }
+            }
+
+            return false;
         }
     }
 }
